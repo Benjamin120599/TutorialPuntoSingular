@@ -1,0 +1,65 @@
+MVC Design Pattern.
+The Model View Controller design pattern specifies that an application consist of a data model, presentation information, and control information. The pattern requires that each of these be separated into different objects.
+ 
+•	The Model contains only the application data, it contains no logic describing how to present the data to a user.
+•	The View presents the model’s data to the user. The view knows how to access the model’s data, but it does not know what this data means or what the user can do to manipulate it.
+•	The Controller is between the view and the model. It listens to events triggered by the view and executes the related process to these events. In most cases, this process is to call a method on the model.
+
+Benefits of MVC.
+•	Traditionally used for Graphical user interfaces (GUIs)
+•	Popular in web applications
+•	MVC responsibilities are divided between the client & server, compatible with web application architecture
+•	MVC is helpful design pattern when planning development
+•	Separation of Concerns: that code is divided based on function to either the model, view, or controller bucket
+•	Removes unnecessary dependencies
+•	Code reuse
+•	Easier to maintain or modify
+•	Supports Multiple views
+•	Each part can be tested independently (Model, view, controller)
+Loosely coupled means that each piece, act independently of each other. Developers can modify one of the pieces, and the other 2 pieces should keep working and not require modifications. When designing MVC software the logic in each of the three parts is independent.
+
+Layered Architecture.
+Components within the layered architecture pattern are organized into horizontal layers, each layer performing a specific role within the application. Although the layered architecture pattern does not specify the number and types of layers that must exist in the pattern, most layered architectures consist of four standard layers: presentation, business, persistence, and database.
+
+ 
+Each layer of the layered architecture pattern has a specific role and responsibility within the application. For example, a presentation layer would be responsible for handling all user interface and browser communication logic, doesn’t need to know or worry about how to get customer data; it only needs to display that information on a screen in particular format and in this same way each layer with its respective functionality. A powerful feature of the layered architecture pattern is the separation of concerns among components. Components in a specific layer deal only with logic that pertains to that layer.
+A closed layer means that as a request moves from layer to layer, it must go through the layer right below it to get to the next layer below that one. For example, a request originating from the presentation layer must first go through the business layer and so on until the last layer.
+ 
+A key concept is “layers of isolation”, it means that changes made in one layer of the architecture generally don’t impact or affect components in other layers, so the change is isolated only to the components in that layer. Also means that each layer is independent of the other layers, thereby having little or no knowledge of the inner workings of other layers in the architecture.
+There are times when it makes sense for certain layers to be open. Supposing it want to add a shared-services layer to an architecture containing common service components accessed by components in the business layer. Creating a services layer is usually a good idea in this case because architecturally it restricts access to the shared services to the business layer. Without a separate layer, there is nothing architecturally that restricts the presentation layer from accessing these common services.  
+When the services layer is marked as open, meaning requests are allowed to bypass this open layer and go directly to the layer below it. 
+ 
+
+KISS. 
+“Keep It Simple, Stupid” – The KISS programming, in particular, is really important. The simpler th code is, the simpler it will be to maintain it in the future. The KISS principle was coined by Kelly Johnson, and it states that most systems work best if they are kept simple rather than making them complex; therefore, simplicity should be a key goal in design and unnecessary complexity should be avoided.
+
+YAGNI.
+YAGNI is a principle behind the extreme programming (XP) practice of “Do the Simplest Thing That Could Possibly Work”. Even when this principle is part of XP, it is applicable in all kinds of methodologies and processes of development. By implementing the ideals of “You Aren’t Gonna Need It” programming, you will save yourself time and be able to move forward with projects efficiently.
+
+DRY.
+“Don’t Repeat Yourself”. The DRY principle, formulated by Andrew Hunt and David Thomas in their book The Pragmatic Programmer, states that “every piece of knowledge must have a single, unambiguous, authoritative representation within a system."  In other words, it must try to maintain the behavior of a functionality of the system in a single piece of code.
+
+SOLID.
+SOLID is an acronym for the first five object-oriented design (OOD) principles by Robert C. Martin also known as Uncle Bob. These principles establish practices that lend to developing software with considerations for maintaining and extending as the project grows. Adopting these practices can also contribute to avoiding code smells, refactoring code, and Agile or Adaptive software development.
+
+SOLID stands for:
+•	S - Single-responsiblity Principle
+•	O - Open-closed Principle
+•	L - Liskov Substitution Principle
+•	I - Interface Segregation Principle
+•	D - Dependency Inversion Principle
+
+Single-responsibility Principle (SRP). A class should have one and only one reason to change, meaning that a class should have only one job.
+Open-closed Principle (OCP). Objects or entities should be open for extension but closed for modification.
+Liskov Substitution Principle. Let q(x) be a property provable about objects of x of type T. Then q(y) should be provable for objects y of type S where S is a subtype of T.
+Interface segregation principle. A client should never be forced to implement an interface that it doesn’t use, or clients shouldn’t be forced to depend on methods they do not use Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module, but they should depend on abstractions.
+ 
+Bibliographic References.
+•	Design Patterns - MVC Pattern. (s. f.). TutorialesPoint. Recuperado 21 de septiembre de 2021, de https://www.tutorialspoint.com/design_pattern/mvc_pattern.htm
+•	Doherty, E. (s. f.). MVC Architecture in 5 minutes: a tutorial for beginners. Educative: Interactive Courses for Software Developers. Recuperado 21 de septiembre de 2021, de https://www.educative.io/blog/mvc-tutorial
+•	GeeksforGeeks. (2018, 8 febrero). MVC Design Pattern. https://www.geeksforgeeks.org/mvc-design-pattern/
+•	Oloruntoba, S. (2021, 10 agosto). SOLID: The First 5 Principles of Object Oriented Design. DigitalOcean. https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design
+•	Paul, J. (2019, 5 mayo). 10 OOP Design Principles Every Programmer Should Know. Hacker Noon. https://hackernoon.com/10-oop-design-principles-every-programmer-should-know-f187436caf65
+•	Richards, M. (s. f.). Software Architecture Patterns. O’Reilly Online Learning. Recuperado 21 de septiembre de 2021, de https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html
+•	Salas, O. (s. f.). KISS YAGNI & DRY Principles | iTexico. Itexico.Com. Recuperado 21 de septiembre de 2021, de https://www.itexico.com/blog/software-development-kiss-yagni-dry-3-principles-to-simplify-your-life
+•	SOLID Principles Java - Javatpoint. (s. f.). Www.Javatpoint.Com. Recuperado 21 de septiembre de 2021, de https://www.javatpoint.com/solid-principles-java
