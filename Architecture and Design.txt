@@ -63,3 +63,6 @@ Bibliographic References.
 •	Richards, M. (s. f.). Software Architecture Patterns. O’Reilly Online Learning. Recuperado 21 de septiembre de 2021, de https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html
 •	Salas, O. (s. f.). KISS YAGNI & DRY Principles | iTexico. Itexico.Com. Recuperado 21 de septiembre de 2021, de https://www.itexico.com/blog/software-development-kiss-yagni-dry-3-principles-to-simplify-your-life
 •	SOLID Principles Java - Javatpoint. (s. f.). Www.Javatpoint.Com. Recuperado 21 de septiembre de 2021, de https://www.javatpoint.com/solid-principles-java
+
+
+This is the change number 1 from the master branch
